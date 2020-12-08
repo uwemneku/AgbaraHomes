@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+/* body{
+    overflow-x: hidden;
+    width: 100vw;
+} */
+
+header{
+    z-index: 10000;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 46px;
+    box-shadow: 0px 0px 5px black;
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+
+}
+
+#hamburger{
+    margin-right: 10px;
+}
+
+#hamburger div{
+    width: 34px;
+    height: 3.5px;
+    margin-top:6px;
+    background-color: black;
+
+}
+
+#logo {
+    margin-left: 10px ;
+    display: flex;
+    align-items: center;
+}
+
+#logo img{
+    width: 80%;
+}
+
+.container{
+    position: absolute;
+    margin-top: 1000px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    overflow-y: scroll;
+
+    transition-property: margin-top;
+    transition-duration: 1s;
+    transition-timing-function: ease-;
+
+}
+.container > div{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+
+
+    width: 319.5px;
+    height: 112px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.164);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+
+}
+
+.container > div > div{
+    display: flex;
+}
+
+.container p {
+    font-family: 'Open Sans';
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.container > div > p{
+    font-weight: 500;
+}
+
+.boxContainer div{
+    display: inline-block;
+    width: 71.5px;
+    height: 46px;
+    margin-left: 10px;
+    margin-top: auto;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px rgba(43, 42, 42, 0.753);
+    /* border: 1px solid black; */
+
+    display: flex;
+    flex-direction: column;
+
+    transition-property: background-color;
+    transition-duration: 0.5s;
+
+    cursor: pointer;
+
+    
+   
+}
+
+.boxContainer p {
+    position: relative;
+    text-align: center;
+    margin: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#bathrooms div div{
+    width: 60px;
+    height: 39px;
+}
+#location div div{
+    height: 39px;
+    width: 80%;
+}
+#submit{
+    width: 149px;
+    height: 50px;
+    background-color:tomato;
+    margin-bottom: 100px;
+
+    cursor: pointer;
+
+    color: white;
+    text-align: center;
+}
+#submit p{
+    margin-left: 0;
+}
+
+#location{
+    display: none;
+}
